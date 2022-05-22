@@ -1,7 +1,7 @@
 from Library import *
 
-Path1 = InputFilePath()
-Path2 = InputFilePath()
+Path1 = 'File.txt'
+Path2 = 'ChFile.txt'
 CreateFFile(Path1)
 OutputFile(Path1)
 CreateSFile(Path1, Path2)

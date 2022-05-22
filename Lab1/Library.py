@@ -16,7 +16,7 @@ def OutputFile(path):
     print(file_cont)
 
 def CreateFFile(path):
-    print("\nInput lines\nPress <ENTER> for end line\nPress ';' for end file input\n")
+    print("Input lines\nPress <ENTER> for end line\nPress ';' for end file input\n")
     lines = []
     while True:
         line = input()
@@ -28,10 +28,3 @@ def CreateFFile(path):
     file = open(path, "w")
     file.write('\n'.join(lines))
     file.close()
-
-def InputFilePath():
-    path = input("Input file path: ")
-    if (path.endswith(".txt")):
-        return path
-    else:
-        return path + ".txt"
